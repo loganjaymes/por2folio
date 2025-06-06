@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
 import {
   Card,
   CardContent,
@@ -21,15 +23,26 @@ export default function Home() {
             </CardHeader>
             <CardContent>
               <div className="flex flex-row gap-4 aspect-auto">
-                <Image src="/meirl2.jpg" alt="me smile" width={300} height={300}></Image>
-                <div className="flex flex-col gap-5">
+                <Image src="/meirl2.jpg" alt="me smile" width={300} height={300} />
+                <div className="flex flex-col gap-6">
                   <p>
                     Hi, my name is Logan Bjork. I'm currently a third year undergraduate student at the University of Florida interested in web development- primarily frontend.
                   </p>
                   <p>
                     Outside of programming, I enjoy playing guitar and bass, as well as weightlifting and calisthenics.
                   </p>
-                  
+                  <div className="flex flex-row gap-6 justify-center h-full items-end">
+                    <Button asChild size="icon" className="hover:opacity-50 hover:shadow-md shadow-blue-950">
+                      <Link href="https://github.com/loganjaymes">
+                        <Image src="/ghub.svg" width={100} height={100} alt="git" />
+                      </Link>
+                    </Button>
+                    <Button asChild size="icon" className="hover:opacity-50 hover:shadow-md shadow-blue-950">
+                      <Link href="https://www.linkedin.com/in/loganbjork/">
+                        <Image class="invert" src="/linkedin.svg" width={100} height={100} alt="linkedin" />
+                      </Link>
+                    </Button>
+                  </div>
                 </div>
               </div>
             </CardContent>
@@ -38,7 +51,7 @@ export default function Home() {
             <CardHeader>
               <CardTitle>tech stack & frameworks</CardTitle>
             </CardHeader>
-            <CardContent className="flex">
+            <CardContent className="flex w-fit">
               <ul className="list-disc">
                 <li>Raw HTML/CSS</li>
                 <li>JavaScript</li>

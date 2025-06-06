@@ -34,7 +34,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NavigationMenu>
+        <NavigationMenu className="font-semibold">
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
