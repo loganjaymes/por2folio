@@ -75,7 +75,7 @@ export default function now() {
               <p>
                 For myself though, one of my goals (as mentioned before) is to release a song of my own. 
                 I want it to be Loathe/Pierce the Veil/Paramore esque, as that's what I'm most interested in making my music sound like.
-                I definitely need to practice more regardless, though.
+                I definitely need to practice more regardless of releasing anything.
               </p>
             </div>
           </div>
@@ -84,7 +84,12 @@ export default function now() {
             <h2 className="text-3xl">gym...</h2>
             <div className="flex flex-col text-left p-4 gap-4">
               <p>
-                I recently changed my split from PPL (push-pull-legs) to PPC (push-pull-calisthenics) because I miss calisthenics.
+                I recently changed my split from PPL (push-pull-legs) to PPC (push-pull-calisthenics) because I missed doing calisthenics. 
+                Basically, I merged my (already minimal) legs split to my push and pull days- squats and calf raises on push, with hamstring curls and the adductor machine on pull.
+                I cut leg extensions completely because I already have pretty big quads. 
+              </p>
+              <p>
+                Hoping to work up to a muscle up (obviously), but some other large goals include a handstand, planche, one-arm pull up, and to get lean enough to see a bicep vein.
               </p>
             </div>
           </div>

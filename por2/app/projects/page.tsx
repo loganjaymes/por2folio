@@ -6,7 +6,6 @@ export default function projects() {
           <div className="pb-8">
             <h1 className="text-5xl">under construction...</h1>
             <p className="opacity-25">you better make [REDACTED]...</p>
-            <p>Last updated June 6th, 2025.</p>
           </div>
         </div>
       </div>
