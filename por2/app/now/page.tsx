@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function now() {
   return (
     <div className="container mx-auto w-full h-full items-center justify-start pt-16">
@@ -12,11 +14,25 @@ export default function now() {
           {/* idk if i like px */}
           <div>
             <h2 className="text-3xl">goals...</h2>
-            <div className="flex flex-col text-left p-4 gap-4">
-              <p>
-                At the start of the summer, I made a list of goals I wanted to accomplish by the end (so, from May to early August). 
-                It's been about a month since then, and I've already accomplished two of them and am working towards 3 of them.
-              </p>
+            <div className="flex flex-row text-left items-end p-4 gap-4 gap-x-10">
+              <Image src="/goals.jpg" alt="list of goals for the summer" width={350} height={400} />
+              <div className="flex flex-col gap-4">
+                <p>
+                  At the start of the summer, I made a list of goals I wanted to accomplish by the end (so, from May to early August). 
+                  It's been about a month since then, and I've already accomplished two of them and am working towards 3 of them- that being a muscle up, 100 leetcodes, and remaking this website.
+                </p>
+                <p>
+                  The ones I want to complete the most are releasing a song, remaking this website, and doing 100 leetcodes in that order-
+                </p>
+                <ul className="flex flex-col list-none list-inside pl-6 gap-2">
+                  <li>... a song, because that's long overdue for how long I've been playing instruments, performing, and recording my own music. </li>
+                  <li>... remaking this website, because my previous one was in raw HTML/CSS (maybe I'll include some pictures of it later, lol) 
+                    and I need to fully throw myself into actual frameworks for what I want to eventually accomplish with web development.</li>
+                  <li>... and 100 leetcodes because I'm internship-less and need to better prepare myself for interviews.
+                    As of a few days ago, I committed myself to doing an hour of leetcode per day, so hopefully the 100 come within time. </li>
+                </ul>
+                <p>The deadline I'm giving myself is August 8th, since that's when the summer semester ends at UF.</p>
+              </div>
             </div>
           </div>
 
@@ -54,9 +70,12 @@ export default function now() {
               </p>
               <p>
                 We're still looking for a drummer, though, and either a new guitarist or bassist.
+                With that being said, hopefully we'll be able to perform in the fall, even if it's a small parking garage show or something.
               </p>
               <p>
-                For myself though, one of my goals 
+                For myself though, one of my goals (as mentioned before) is to release a song of my own. 
+                I want it to be Loathe/Pierce the Veil/Paramore esque, as that's what I'm most interested in making my music sound like.
+                I definitely need to practice more regardless, though.
               </p>
             </div>
           </div>
@@ -65,7 +84,7 @@ export default function now() {
             <h2 className="text-3xl">gym...</h2>
             <div className="flex flex-col text-left p-4 gap-4">
               <p>
-
+                I recently changed my split from PPL (push-pull-legs) to PPC (push-pull-calisthenics) because I miss calisthenics.
               </p>
             </div>
           </div>

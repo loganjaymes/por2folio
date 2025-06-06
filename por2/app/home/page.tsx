@@ -38,7 +38,7 @@ export default function Home() {
                     </Button>
                     <Button asChild size="icon" className="hover:opacity-50 hover:shadow-md shadow-blue-950">
                       <Link href="https://www.linkedin.com/in/loganbjork/">
-                        <Image class="invert" src="/linkedin.svg" width={100} height={100} alt="linkedin" />
+                        <Image className="invert" src="/linkedin.svg" width={100} height={100} alt="linkedin" />
                       </Link>
                     </Button>
                   </div>
