@@ -13,7 +13,6 @@ import {
 export default function Home() {
   return (
 
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-12 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-zinc-950">
       <main className="flex flex-col row-start-2 items-center sm:items-start">
         <div className="flex flex-row gap-10 justify-center">
           {/* fixme slate gray dne. also make global bg color zinc-950;. alos change  max-w-1/2 this fucks up aspect ratio ofhgdfjhnasdmd*/}
@@ -23,7 +22,7 @@ export default function Home() {
             </CardHeader>
             <CardContent>
               <div className="flex flex-row gap-4 aspect-auto">
-                <Image src="/meirl2.jpg" alt="me smile" width={300} height={300} />
+                <Image src="/meirl2.jpg" alt="me smile" width={300} height={300} className="rounded-sm"/>
                 <div className="flex flex-col gap-6">
                   <p>
                     Hi, my name is Logan Bjork. I'm currently a third year undergraduate student at the University of Florida interested in web development- primarily frontend.
@@ -65,6 +64,5 @@ export default function Home() {
           </Card>
         </div>
       </main>
-    </div>
   );
 }
