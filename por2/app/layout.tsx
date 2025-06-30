@@ -44,7 +44,7 @@ export default function RootLayout({
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/myspace">MySpace</Link>
+                  <Link href="/myspace">shhh</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>

@@ -1,13 +1,40 @@
+"use client"
 import * as React from "react"
 
 import { cn } from "@/lib/utils"
 
 function Card({ className, ...props }: React.ComponentProps<"div">) {
+  const bounds = React.useRef<DOMRect | null>(null)
+
   return (
     <div
+      onMouseLeave={(event) => {bounds.current = null}}
+      onMouseEnter={(event) => {
+        bounds.current = event.currentTarget.getBoundingClientRect();
+      }}
+      onMouseMove={(event) => {
+        if(!bounds.current) return;
+        // get coordinates
+        const x = event.clientX - bounds.current.left;
+        const y = event.clientY - bounds.current.top;
+
+        // get percentages to 'normalize' card rotations
+        const xPercent = x / bounds.current.width;
+        const yPercent = y / bounds.current.height;
+
+        const xRot = (xPercent - 0.5) * 20;
+        const yRot = (0.5 - yPercent) * 20;
+
+        console.table({yRot, xRot});
+
+        // swap variables used because axes != mvmt
+        event.currentTarget.style.setProperty("--x-rotation", `${yRot}deg`);
+        event.currentTarget.style.setProperty("--y-rotation", `${xRot}deg`);
+      }}
       data-slot="card"
       className={cn(
-        "bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm transition-colors duration-250 ease-in-out hover:border-blue-300",
+        // border-1 maybe idk
+        "bg-card text-card-foreground flex flex-col gap-6 rounded-xl border-2 py-6 shadow-sm transition-colors duration-400 ease-in-out hover:border-blue-300 hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))]",
         className
       )}
       {...props}
