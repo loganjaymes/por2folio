@@ -6,7 +6,7 @@ export default function now() {
       <div className="flex flex-col text-center h-full text-zinc-300 gap-2">
         <div className="pb-8">
           <h1 className="text-5xl">now</h1>
-          <p>Last updated June 6th, 2025.</p>
+          <p>Last updated July 4th, 2025.</p>
           <a href="https://nownownow.com/about" className="opacity-25 hover:underline">What am I?</a>
         </div>
 
@@ -40,22 +40,16 @@ export default function now() {
             <h2 className="text-3xl">projects...</h2>
             <div className="flex flex-col text-left p-4 gap-4">
               <p>
-                Outside of this website, another project I have in the works is making a MIDI drumset. 
-                My inspiration for this comes from the fact that most have horrible sound presets unless you're willing to shell out an egregious amount of money.
+                While I initially wanted to create a hardware-focused project (a MIDI drumkit), I decided it would be a better use of my time now to really hone in on web-development.
               </p>
               <p>
-                By creating it myself, I would be able to:
+                With that being said, I'm currently working on creating a project that combines fullstack web development, 3D-rendering and modelling, and Persona (the videogame franchise).
+                I'm using Blender, Three.js, and GoogleAuth to do so. 
               </p>
-              <ul className="list-decimal list-inside pl-6">
-                <li>load custom sounds, </li>
-                <li>do it for far cheaper, </li>
-                <li>use it to both record and re-learn the drums (they were my first instrument growing up!), and </li>
-                <li>combine my love of music with technology.</li>
-              </ul>
-              <p>
-                I hope to at least start it by the end of the month, as I've been busy between balancing school/projects, recovering a sleep schedule, and the gym.
-                My goal is to have that be my "big" project for this summer, and finish it by the end of the semester.
-              </p>
+              <div className="flex flex-row justify-around items-end">
+                <p>Right now, I have most of the rig done, but here's an older picture from some progress pictures I took.</p>
+                <Image className="flex" src="/blndr.jpg" alt="semi-constructed blender rig of a low-poly leg" width={400} height={400} />
+              </div>
             </div>
           </div>
 
@@ -75,7 +69,6 @@ export default function now() {
               <p>
                 For myself though, one of my goals (as mentioned before) is to release a song of my own. 
                 I want it to be Loathe/Pierce the Veil/Paramore esque, as that's what I'm most interested in making my music sound like.
-                I definitely need to practice more regardless of releasing anything.
               </p>
             </div>
           </div>
@@ -89,7 +82,7 @@ export default function now() {
                 I cut leg extensions completely because I already have pretty big quads. 
               </p>
               <p>
-                Hoping to work up to a muscle up (obviously), but some other large goals include a handstand, planche, one-arm pull up, and to get lean enough to see a bicep vein.
+                Hoping to work up to a muscle up (obviously), but some other large goals include a handstand, planche, and one-arm pull up. I think the latter will take the longest, though.
               </p>
             </div>
           </div>
