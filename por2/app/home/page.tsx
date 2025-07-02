@@ -157,12 +157,12 @@ export default function Home() {
                       Outside of programming, I enjoy playing guitar and bass, as well as weightlifting and calisthenics.
                     </p>
                     <div className="flex flex-row gap-6 justify-center items-end mt-auto">
-                      <Button asChild size="icon" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-md shadow-blue-950">
+                      <Button asChild size="icon" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
                         <Link href="https://github.com/loganjaymes">
                           <Image src="/ghub.svg" width={100} height={100} alt="git" />
                         </Link>
                       </Button>
-                      <Button asChild size="icon" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-md shadow-blue-950">
+                      <Button asChild size="icon" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
                         <Link href="https://www.linkedin.com/in/loganbjork/">
                           <Image className="invert" src="/linkedin.svg" width={100} height={100} alt="linkedin" />
                         </Link>
