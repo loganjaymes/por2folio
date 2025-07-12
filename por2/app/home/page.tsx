@@ -33,7 +33,7 @@ const formSchema = z.object({
   message: z.string().min(2, "Too short (min 2)").max(500, "Too long (max 500)"),
 });
 
-export function ContactForm() {
+function ContactForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
