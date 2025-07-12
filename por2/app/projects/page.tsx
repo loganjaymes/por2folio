@@ -244,7 +244,7 @@ export default function projects() {
                           </DialogHeader>
                         </DialogContent>
                       </Dialog>
-                      <a className="text-blue-300 hover:underline duration-100 hover:shadow-lg shadow-blue-950" href="https://github.com/Kavipatel0/SASEHacks2024">Repository</a>
+                      <a className="text-blue-300 hover:underline duration-100 hover:shadow-lg shadow-blue-950" href="">No Repository Yet!</a>
                     </div>
                   </CardFooter>
                 </Card>
