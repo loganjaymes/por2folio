@@ -150,7 +150,7 @@ export default function Home() {
                     <p>
                       I'm currently learning how to use Blender, Three.js, and more in-depth fullstack development for a personal project I'm working on.
                       Visit&nbsp;
-                      <a href="/now">now</a>
+                      <Link className="text-blue-300 hover:underline duration-100 hover:shadow-lg shadow-blue-950" href="/now">now</Link>
                       &nbsp;to see more about that ;)
                     </p>
                     <p>
@@ -158,14 +158,19 @@ export default function Home() {
                     </p>
                     <div className="flex flex-row gap-6 justify-center items-end mt-auto">
                       <Button asChild size="icon" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
-                        <Link href="https://github.com/loganjaymes">
+                        <a href="https://github.com/loganjaymes" target="_blank">
                           <Image src="/ghub.svg" width={100} height={100} alt="git" />
-                        </Link>
+                        </a>
                       </Button>
                       <Button asChild size="icon" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
-                        <Link href="https://www.linkedin.com/in/loganbjork/">
+                        <a href="https://www.linkedin.com/in/loganbjork/" target="_blank">
                           <Image className="invert" src="/linkedin.svg" width={100} height={100} alt="linkedin" />
-                        </Link>
+                        </a>
+                      </Button>
+                      <Button asChild size="icon" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
+                        <a href="/Logan_Bjork_Resume.pdf" target="_blank">
+                          <Image className="invert" src="/dwn.svg" width={100} height={100} alt="resume download" />
+                        </a>
                       </Button>
                     </div>
                   </div>

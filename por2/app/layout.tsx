@@ -1,4 +1,4 @@
-import { Noto_Sans, Geist, Geist_Mono } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import Link from "next/link"
 import {
@@ -12,22 +12,15 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
 
+export const metadata = {
+  title: "Logan Bjork - Portfolio"
+}
 
 const noto = Noto_Sans({
   variable: "--font-noto",
   subsets: ["latin"],
   display: "swap",
 })
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
 
 export default function RootLayout({
   children,
