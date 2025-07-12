@@ -19,18 +19,19 @@ export default function projects() {
         </div>
 
         {/* projects start */}
+        {/* eventually make line after perspecitve (<div className="flex max-w-lg min-h-full">)  max-w-md and have 3 per row. will need to rearrange divs but its fine */}
         <div className="flex flex-col gap-8">
           {/* top */}
-          <div className="flex gap-8 h-full">
+          <div className="flex gap-8 h-full items-center justify-center">
             {/* enviropact */}
             <div className="[perspective:15000px]">
-              <div className="flex min-h-full w-1/2">
+              <div className="flex max-w-lg min-h-full">
                 <Card className="bg-slate-gray-950 text-zinc-300 overflow-y-auto flex flex-col h-full">
                   <CardHeader>
                     <CardTitle className="text-3xl">EnviroPact</CardTitle>
                   </CardHeader>
                   <CardContent className="flex flex-col flex-grow gap-4 w-full items-center">
-                      <Image className="rounded-md" src="/proj/env.jpg" width={400} height={200} alt="TRIFECTA image displaying help info"/>
+                      <Image className="rounded-md" src="/proj/envr.png" width={600} height={200} alt="A screenshot from ENVIROPACT's homepage"/>
                       BLURB FIXME
                   </CardContent>
                   <CardFooter>
@@ -45,13 +46,13 @@ export default function projects() {
 
             {/* trifecta */}
             <div className="[perspective:15000px]">
-              <div className="flex min-h-full w-1/2">
+              <div className="flex max-w-lg min-h-full">
                 <Card className="bg-slate-gray-950 text-zinc-300 overflow-y-auto flex flex-col h-full">
                   <CardHeader>
                     <CardTitle className="text-3xl">TRIFECTA</CardTitle>
                   </CardHeader>
                   <CardContent className="flex flex-col flex-grow gap-4 w-full items-center">
-                      <Image className="rounded-md" src="/proj/trif.png" width={600} height={200} alt="TRIFECTA image displaying help info"/>
+                      <Image className="rounded-md" src="/proj/trifect.png" width={600} height={200} alt="TRIFECTA image displaying help info"/>
                       BLURB FIXME
                   </CardContent>
                   <CardFooter>
@@ -66,43 +67,48 @@ export default function projects() {
           </div>
 
           {/* btm */}
-          <div className="flex gap-8">
+          <div className="flex gap-8 h-full items-center justify-center">
             {/* 6 degrees */}
-            <div className="[perspective:15000px] flex-1 min-h-0">
-              <Card className="bg-slate-gray-950 text-zinc-300 overflow-y-auto">
-                <CardHeader>
-                  <CardTitle>6 Degrees</CardTitle>
-                </CardHeader>
-                <CardContent className="flex flex-col w-full">
-                    IMG
-                    BLURB
-                </CardContent>
-                <CardFooter>
-                  <div className="flex flex-row gap-4 w-full justify-between">
-                    <p>TECH SHIT HERE</p>
-                    <a href="https://github.com/AlexanderWangY/movie-linker">Repository</a>
-                  </div>
-                </CardFooter>
-              </Card>
+            <div className="[perspective:15000px]">
+              <div className="flex max-w-lg min-h-full">
+                <Card className="bg-slate-gray-950 text-zinc-300 overflow-y-auto">
+                  <CardHeader>
+                    <CardTitle>6 Degrees</CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex flex-col flex-grow gap-4 w-full items-center">
+                    <Image className="rounded-md" src="/proj/sixdeg.png" width={600} height={200} alt="A screenshot displaying some connections between the movies Dune and Ponyo"/>
+                    BLURB FIXME
+                  </CardContent>
+                  <CardFooter>
+                    <div className="flex flex-row gap-4 w-full justify-between">
+                      <p>TECH SHIT HERE</p>
+                      <a href="https://github.com/AlexanderWangY/movie-linker">Repository</a>
+                    </div>
+                  </CardFooter>
+                </Card>
+              </div>
             </div>
 
             {/* SEES Signup */}
-            <div className="[perspective:15000px] flex-1 min-h-0">
-              <Card className="bg-slate-gray-950 text-zinc-300 overflow-y-auto">
-                <CardHeader>
-                  <CardTitle>SEES Signup</CardTitle>
-                </CardHeader>
-                <CardContent className="flex flex-col w-full">
-                    IMG
-                    BLURB
-                </CardContent>
-                <CardFooter>
-                  <div className="flex flex-row gap-4 w-full justify-between">
-                    <p>TECH SHIT HERE</p>
-                    <a href="https://github.com/Kavipatel0/SASEHacks2024">Repository</a>
-                  </div>
-                </CardFooter>
-              </Card>
+            <div className="[perspective:15000px]">
+              <div className="flex max-w-lg min-h-full">
+                <Card className="bg-slate-gray-950 text-zinc-300 overflow-y-auto">
+                  <CardHeader>
+                    <CardTitle>SEES Signup</CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex flex-col flex-grow gap-4 w-full items-center">
+                    <Image className="rounded-md" src="/proj/seeswip.png" width={600} height={200} alt="A WIP image showing a low poly blender rig"/>
+                    BLURB FIXME
+                  </CardContent>
+                  <CardFooter>
+                    <div className="flex flex-row gap-4 w-full justify-between">
+                      <p>TECH SHIT HERE</p>
+                      <p>Planned Proposal</p>
+                      <a href="https://github.com/Kavipatel0/SASEHacks2024">Repository</a>
+                    </div>
+                  </CardFooter>
+                </Card>
+              </div>
             </div>
           </div>
 
