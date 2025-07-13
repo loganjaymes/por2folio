@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/navigation-menu"
 
 export const metadata = {
-  title: "Logan Bjork - Portfolio"
+  title: "LJB"
 }
 
 const noto = Noto_Sans({
