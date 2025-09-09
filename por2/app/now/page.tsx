@@ -7,7 +7,7 @@ export default function now() {
       <div className="flex flex-col text-center h-full text-zinc-300 gap-2">
         <div className="pb-8 gap-2">
           <h1 className="text-5xl">now</h1>
-          <p>Last updated July 4th, 2025.</p>
+          <p>Last updated September 9th, 2025.</p>
           <a href="https://nownownow.com/about" className="opacity-25 hover:underline">What am I?</a>
         </div>
 
@@ -16,23 +16,27 @@ export default function now() {
           <div>
             <h2 className="text-3xl">goals...</h2>
             <div className="flex flex-row text-left items-end p-4 gap-4 gap-x-10">
-              <Image src="/goals.jpg" alt="list of goals for the summer" width={350} height={400} />
+              <Image src="/goals.png" alt="list of goals for the fall" width={350} height={400} />
               <div className="flex flex-col gap-4">
                 <p>
-                  At the start of the summer, I made a list of goals I wanted to accomplish by the end (so, from May to early August). 
-                  It's been about a month since then, and I've already accomplished two of them and am working towards 3 of them- that being a muscle up, 100 leetcodes, and remaking this website.
+                  If you remember my list of goals from the summer, I created another for this fall. A lot of them are repeated because I believe they're things I should continue to shoot for,
+                  like applications, leetcode, and hobbies (fe. lifting, boxing, and music).
                 </p>
                 <p>
-                  The ones I want to complete the most are releasing a song, remaking this website, and doing 100 leetcodes in that order-
+                  The ones I want to complete the most this time around are securing an internship/co-op to further my development skills, and my hobby-oriented goals (such as benching 185lbs,
+                  completing a muscle up, and releasing a song).
                 </p>
-                <ul className="flex flex-col list-none list-inside pl-6 gap-2">
+                <p>
+                  While I don't think mass applying is inherently a bad thing, I still plan on only applying to internships that actually interest me, and hitting my goal of 100 from there.
+                </p>
+                {/* <ul className="flex flex-col list-none list-inside pl-6 gap-2">
                   <li>... a song, because that's long overdue for how long I've been playing instruments, performing, and recording my own music. </li>
                   <li>... remaking this website, because my previous one was in raw HTML/CSS (maybe I'll include some pictures of it later, lol) 
                     and I need to fully throw myself into actual frameworks for what I want to eventually accomplish with web development.</li>
                   <li>... and 100 leetcodes because I'm internship-less and need to better prepare myself for interviews.
                     As of a few days ago, I committed myself to doing an hour of leetcode per day, so hopefully the 100 come within time. </li>
-                </ul>
-                <p>The deadline I'm giving myself is August 8th, since that's when the summer semester ends at UF.</p>
+                </ul> */}
+                <p>I don't have a deadline yet, but I'm thinking sometime in mid-December.</p>
               </div>
             </div>
           </div>
@@ -57,13 +61,13 @@ export default function now() {
           <div>
             <h2 className="text-3xl">music...</h2>
             <div className="flex flex-row text-left p-4 gap-4">
-              <Image className="flex" src="/blog/yt.png" alt="screenshot of my youtube page" width={900} height={400} />
+              <Image className="flex" src="/blog/yt.png" alt="screenshot of my youtube page" width={1000} height={400} />
               <div className="flex flex-col gap-4">
                 <p>
                   I started uploading some covers to&nbsp;
                   <a href="https://www.youtube.com/@loganjaymes" className="text-blue-300 hover:underline duration-100 hover:shadow-lg shadow-blue-950">Youtube</a>
-                  . So far, I've only posted ones from my Instagram stories, but I'm looking to upload more. The first one I'm going to do when I have time is "Bury Me In Black" by My Chemical Romance,
-                  and then, once I learn the solo, "Tears Don't Fall" by Bullet For My Valentine. 
+                  . So far, I've only posted ones from my Instagram stories, but I'm looking to upload more. I plan on doing either Demolition Lovers by MCR next, or 
+                  a video of my band playing.
                 </p>
                 <p>Also, here's my monthly Spotify playlist:</p>
                 <Spotify className="w-full" link="https://open.spotify.com/playlist/3PngZsvUIXx2NAYZUc22iz?si=339cc4b1b4454904" />
@@ -76,8 +80,7 @@ export default function now() {
             <div className="flex flex-col text-left p-4 gap-4">
               <p>
                 I recently changed my split from PPL (push-pull-legs) to PPC (push-pull-calisthenics) because I missed doing calisthenics. 
-                Basically, I merged my (already minimal) legs split to my push and pull days- squats and calf raises on push, with hamstring curls and the adductor machine on pull.
-                I cut leg extensions completely because I already have pretty big quads. 
+                Basically, I merged my (already minimal) legs split to my push and pull days.
               </p>
               <p>
                 Hoping to work up to a muscle up (obviously), but some other large goals include a handstand, planche, and one-arm pull up. I think the latter will take the longest, though.
