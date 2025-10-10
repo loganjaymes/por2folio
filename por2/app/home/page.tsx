@@ -184,10 +184,11 @@ export default function Home() {
                   <ul className="list-disc">
                     {/* maybe have each bullet be img representing tech. use globals.css for this https://stackoverflow.com/questions/21161569/html-list-with-different-images-as-bullets */}
                     <li>Raw HTML/CSS</li>
+                    <li>Python</li>
+                    <li>C</li>
+                    <li>C++</li>
                     <li>TypeScript</li>
                     <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>C++</li>
                   </ul>
                   <ul className="list-disc">
                     <li>React</li>

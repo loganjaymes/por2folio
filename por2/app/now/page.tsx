@@ -39,7 +39,7 @@ export default function now() {
               </p>
               <p>
                 Since I've become more interested in lower level development as a result of OS, I've began to take more interest in using C rather than C++.
-                My first project I'm making is a Chip8 emulator so I can 1. build something actually functional and not a simple CLI program, and 2. so I can better understand how my code communicates with the hardware it's running on. 
+                My first project I'm making is a Chip8 emulator so I can 1. build something actually functional and not a simple CLI program, and 2. so I can better understand how what I code communicates with the hardware it's running on. 
               </p>
               <p>
                 As for web development, I still plan on working on SEES Signup (name tentative) because I want to be confident in my ability to connect the front and back end of applications.
