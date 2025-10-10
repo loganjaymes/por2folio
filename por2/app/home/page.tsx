@@ -145,13 +145,7 @@ export default function Home() {
                   </AspectRatio>
                   <div className="flex flex-col gap-6">
                     <p>
-                      Hi, my name is Logan Bjork. I'm currently a third year undergraduate student at the University of Florida interested in web development- primarily frontend.
-                    </p>
-                    <p>
-                      I'm currently learning how to use Blender, Three.js, and more in-depth fullstack development for a personal project I'm working on.
-                      Visit&nbsp;
-                      <Link className="text-blue-300 hover:underline duration-100 hover:shadow-lg shadow-blue-950" href="/now">now</Link>
-                      &nbsp;to see more about that ;)
+                      Hi, my name is Logan Bjork. I'm currently a third year undergraduate student at the University of Florida interested in both software engineering and web development- primarily frontend.
                     </p>
                     <p>
                       Outside of programming, I enjoy playing guitar and bass, as well as weightlifting and calisthenics.
