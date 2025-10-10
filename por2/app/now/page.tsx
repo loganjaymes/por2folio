@@ -38,7 +38,7 @@ export default function now() {
                 Right now, I have a handful of projects I plan on working on. 
               </p>
               <p>
-                Since I've become more interested in lower level development as a result of OS, I've began to take more interest in using C rather than C++.
+                Since I've become more interested in lower level development as a result of OS, I've began to take more interest in using C rather than C++/Python/JS/etc.
                 My first project I'm making is a Chip8 emulator so I can 1. build something actually functional and not a simple CLI program, and 2. so I can better understand how what I code communicates with the hardware it's running on. 
               </p>
               <p>
