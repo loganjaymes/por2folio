@@ -47,7 +47,7 @@ export default function now() {
               </p>
               <p>
                 I also plan to purchase an Arduino to continue making the MIDI drumkit I was talking about over the summer. 
-                I put off purchasing one because I thought I might be able to get one through my university for cheaper (or even free...), but I think I'm going to bite the bullet and drop the ~$15 it costs lol.
+                I put off purchasing one because I thought I might be able to get one through my university for cheaper (or even free...), but I think I'm going to bite the bullet and just drop the ~$15 it costs lol.
               </p>
             </div>
           </div>
