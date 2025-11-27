@@ -139,40 +139,42 @@ export default function Home() {
               <CardContent className="flex flex-row">
                 <div className="flex gap-6 justify-center items-end mt-auto">
                   <div className="flex flex-col gap-6">
-                    <Button size="icon-lg" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
+                    <div className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
                       <a href="/projects">
                         <Image src="/ico/proj.png" width={100} height={100} alt="projects" />
                       </a>
-                    </Button>
+                    </div>
 
-                    <Button size="icon-lg" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
+                    <div className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
                       <a href="/gallery">
                         <Image src="/ico/gallery.png" width={100} height={100} alt="projects" />
                       </a>
-                    </Button>
+                    </div>
 
                     <audio src="untitled.wav" preload="auto" />
-                    <Button size="icon-lg" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg hover:cursor-pointer shadow-blue-950" onClick={play}>
+                    <div className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950" onClick={play}>
                       <Image src="/ico/maow.png" width={100} height={100} alt="meow"/>
-                    </Button>
+                    </div>
                   </div>
 
                   <div className="flex flex-col gap-6">
-                    <Button asChild size="icon-lg" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
+                    <div className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
                       <a href="https://github.com/loganjaymes" target="_blank">
                         <Image src="/ico/gitcol.png" width={100} height={100} alt="git" />
                       </a>
-                    </Button>
-                    <Button asChild size="icon-lg" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
+                    </div>
+
+                    <div className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
                       <a href="https://www.linkedin.com/in/loganbjork/" target="_blank">
                         <Image src="/ico/in.png" width={100} height={100} alt="linkedin" />
                       </a>
-                    </Button>
-                    <Button asChild size="icon-lg" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
+                    </div>
+
+                    <div className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
                       <a href="/Logan_Bjork_Resume.pdf" target="_blank">
                         <Image src="/ico/download.png" width={100} height={100} alt="resume download" />
                       </a>
-                    </Button>
+                    </div>
                   </div>
               </div>
               </CardContent>
