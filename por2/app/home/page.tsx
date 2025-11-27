@@ -140,30 +140,36 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <div className="flex flex-row gap-4 text-lg">
-                  <AspectRatio ratio={23 / 9}>
-                    <Image fill={true} src="/meirl2.jpg" alt="me smile" className="rounded-sm object-cover"/>
+                  <AspectRatio ratio={2}>
+                    <Image fill={true} src="/meirl.webp" alt="me smile" className="rounded-sm object-cover"/>
                   </AspectRatio>
                   <div className="flex flex-col gap-6">
+                    <h2>
+                      Hi, I'm Logan Bjork- a developer, illustrator, and designer.
+                    </h2>
                     <p>
-                      Hi, my name is Logan Bjork. I'm currently a third year undergraduate student at the University of Florida interested in both software engineering and web development- primarily frontend.
+                      I'm currently an undergraduate at the University of Florida interested in both software engineering and web development.
                     </p>
                     <p>
-                      Outside of programming, I enjoy playing guitar and bass, as well as weightlifting and calisthenics.
+                      While finishing up my bachelors, I'm excited to make an impact on the real world through building meaningful projects and learning as much as I can about software development.
+                    </p>
+                    <p>
+                      Outside of programming, I enjoy playing guitar and bass, illustrating and 3D modeling, as well as weightlifting and calisthenics.
                     </p>
                     <div className="flex flex-row gap-6 justify-center items-end mt-auto">
                       <Button asChild size="icon" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
                         <a href="https://github.com/loganjaymes" target="_blank">
-                          <Image src="/ghub.svg" width={100} height={100} alt="git" />
+                          <Image src="/ico/git.png" width={100} height={100} alt="git" />
                         </a>
                       </Button>
                       <Button asChild size="icon" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
                         <a href="https://www.linkedin.com/in/loganbjork/" target="_blank">
-                          <Image className="invert" src="/linkedin.svg" width={100} height={100} alt="linkedin" />
+                          <Image src="/ico/in.png" width={100} height={100} alt="linkedin" />
                         </a>
                       </Button>
                       <Button asChild size="icon" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
                         <a href="/Logan_Bjork_Resume.pdf" target="_blank">
-                          <Image className="invert" src="/dwn.svg" width={100} height={100} alt="resume download" />
+                          <Image src="/ico/download.png" width={100} height={100} alt="resume download" />
                         </a>
                       </Button>
                     </div>
@@ -183,12 +189,11 @@ export default function Home() {
                 <CardContent className="flex w-fit gap-10 px-14">
                   <ul className="list-disc">
                     {/* maybe have each bullet be img representing tech. use globals.css for this https://stackoverflow.com/questions/21161569/html-list-with-different-images-as-bullets */}
-                    <li>Raw HTML/CSS</li>
+                    <li>HTML/CSS</li>
                     <li>Python</li>
                     <li>C</li>
                     <li>C++</li>
                     <li>TypeScript</li>
-                    <li>JavaScript</li>
                   </ul>
                   <ul className="list-disc">
                     <li>React</li>
