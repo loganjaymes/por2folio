@@ -1,17 +1,8 @@
 "use client"
-import { Analytics } from "@vercel/analytics/next"
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import Image from "next/image";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -197,7 +188,7 @@ export default function Home() {
               <div className="flex flex-row gap-4 text-lg">
                 <Image src="/meirl.webp" alt="me smile" className="rounded-sm object-cover w-[450px] h-[450px] max-w-[450px] max-h-[450px]" width={500} height={500}/>
                 <div className="flex flex-col gap-6">
-                  <h2>Hi, I'm Logan Bjork- a developer, illustrator, and designer.</h2>
+                  <h2>Hi, I'm Logan Bjork- a developer, illustrator, and audio engineer.</h2>
                   <p>I'm currently an undergraduate at the University of Florida interested in software engineering, cybersecurity, and web development.</p>
                   <p>Outside of programming, I enjoy playing guitar and bass, illustrating and 3D modeling, as well as weightlifting and calisthenics.</p>
                 </div>

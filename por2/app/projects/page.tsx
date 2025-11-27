@@ -26,7 +26,7 @@ export default function projects() {
         {/* header */}
         <div className="pb-8">
           <h1 className="text-5xl">projects</h1>
-          <p>A concise portfolio of my personal projects.</p>
+          <p>a concise portfolio of my personal projects.</p>
         </div>
 
         {/* projects start */}
