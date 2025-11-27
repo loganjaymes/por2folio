@@ -152,7 +152,7 @@ export default function Home() {
                     </div>
 
                     <audio src="untitled.wav" preload="auto" />
-                    <div className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950" onClick={play}>
+                    <div className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950 hover:cursor-pointer" onClick={play}>
                       <Image src="/ico/maow.png" width={100} height={100} alt="meow"/>
                     </div>
                   </div>
