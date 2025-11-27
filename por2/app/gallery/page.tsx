@@ -8,7 +8,7 @@ export default function gallery() {
         {/* header */}
         <div className="pb-8">
           <h1 className="text-5xl">art & music</h1>
-          <p>my works.</p>
+          <p>my works</p>
         </div>
 
         <div className="flex flex-col">
@@ -18,7 +18,7 @@ export default function gallery() {
               <h2 className="text-2xl">art</h2>
               <div className="flex flex-col gap-8">
                 <a href="https://skfb.ly/pDQpF" target="_blank">
-                  <Image src="/gallery/dim.webp" width={600} height={300} alt="room diorama"/>
+                  <Image src="/gallery/cycles.png" width={600} height={300} alt="room diorama"/>
                 </a>
 
                 <Image src="/gallery/zag.png" width={600} height={600} alt="WIP sculpt"/>
@@ -38,7 +38,7 @@ export default function gallery() {
             <h2 className="text-2xl">music</h2>
             {/* make links dialog => yt + bandcamp */}
             <div className="flex flex-col gap-8 items-center">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/C_TJbIHzkGs?si=pxdeDuDcGvxLMNc1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/C_TJbIHzkGs?si=pxdeDuDcGvxLMNc1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" />
                 <div className="flex flex-row gap-8">
                   <Button asChild size="icon-lg" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
                     <a href="https://www.youtube.com/@loganjaymes" target="_blank">
@@ -52,6 +52,7 @@ export default function gallery() {
                     </a>
                   </Button>
                 </div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/2MI-_jWAmlE?si=91cSU7Q48C8OyWYh" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" />
               </div>
             </div>  
           </div>
