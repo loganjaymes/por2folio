@@ -2,7 +2,6 @@ import Image from "next/image";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -10,10 +9,8 @@ import {
 import { Button } from "@/components/ui/button"
 import {
   Dialog,
-  DialogClose,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -153,7 +150,6 @@ export default function projects() {
                   </CardHeader>
                   <CardContent className="flex flex-col flex-grow gap-4 w-full items-center">
                     <Image className="rounded-md" src="/proj/sixdeg.png" width={600} height={200} alt="A screenshot displaying some connections between the movies Dune and Ponyo"/>
-                    {/* BLURB FIXME */}
                   </CardContent>
                   <CardFooter>
                     <div className="flex flex-row gap-4 w-full justify-between items-center">
@@ -198,6 +194,7 @@ export default function projects() {
             </div>
 
             {/* SEES Signup */}
+            {/* 
             <div className="[perspective:15000px]">
               <div className="flex max-w-lg min-h-full">
                 <Card className="bg-slate-gray-950 text-zinc-300 overflow-y-auto">
@@ -206,7 +203,6 @@ export default function projects() {
                   </CardHeader>
                   <CardContent className="flex flex-col flex-grow gap-4 w-full items-center">
                     <Image className="rounded-md" src="/proj/seeswip.png" width={600} height={200} alt="A WIP image showing a low poly blender rig"/>
-                    {/* BLURB FIXME */}
                   </CardContent>
                   <CardFooter>
                     <div className="flex flex-row gap-4 w-full justify-between items-center">
@@ -250,6 +246,7 @@ export default function projects() {
                 </Card>
               </div>
             </div>
+            */}
           </div>
 
         </div>

@@ -4,21 +4,24 @@ import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import Image from "next/image";
-import Link from "next/link"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
-import { AspectRatio } from "@/components/ui/aspect-ratio"
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -127,97 +130,93 @@ return (
   )
 }
 
+function play() {
+  new Audio("/untitled.wav").play()
+}
+
 export default function Home() {
   return (
-      <main className="flex flex-col row-start-2 items-center sm:items-start min-h-0">
-        {/* div for big card */}
-        <div className="flex flex-row gap-10 justify-center [perspective:1800px] min-h-0 h-full">
-          {/* fixme slate gray dne. also make global bg color zinc-950;. alos change  max-w-1/2 this fucks up aspect ratio ofhgdfjhnasdmd*/}
-            <Card className="bg-slate-gray-950 text-zinc-300 max-w-7/12 justify-center">
-          {/* could do h-[50%], but that adds some blank space below main card. idk */}
+    <main className="flex flex-row row-start-2 items-center sm:items-start min-h-0 p-12 gap-10">
+        {/* click */}
+        <div className="flex flex-row gap-10 justify-center [perspective:1800px] min-h-0">
+          <div className="[perspective:800px] flex-1 min-h-0">
+            <Card className="bg-slate-gray-950 text-zinc-300">
               <CardHeader>
-                <CardTitle>about me</CardTitle>
+                <CardTitle>click me</CardTitle>
               </CardHeader>
-              <CardContent>
-                <div className="flex flex-row gap-4 text-lg">
-                  <AspectRatio ratio={2}>
-                    <Image fill={true} src="/meirl.webp" alt="me smile" className="rounded-sm object-cover"/>
-                  </AspectRatio>
+              
+              <CardContent className="flex flex-row">
+                <div className="flex gap-6 justify-center items-end mt-auto">
                   <div className="flex flex-col gap-6">
-                    <h2>
-                      Hi, I'm Logan Bjork- a developer, illustrator, and designer.
-                    </h2>
-                    <p>
-                      I'm currently an undergraduate at the University of Florida interested in both software engineering and web development.
-                    </p>
-                    <p>
-                      While finishing up my bachelors, I'm excited to make an impact on the real world through building meaningful projects and learning as much as I can about software development.
-                    </p>
-                    <p>
-                      Outside of programming, I enjoy playing guitar and bass, illustrating and 3D modeling, as well as weightlifting and calisthenics.
-                    </p>
-                    <div className="flex flex-row gap-6 justify-center items-end mt-auto">
-                      <Button asChild size="icon" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
-                        <a href="https://github.com/loganjaymes" target="_blank">
-                          <Image src="/ico/git.png" width={100} height={100} alt="git" />
-                        </a>
-                      </Button>
-                      <Button asChild size="icon" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
-                        <a href="https://www.linkedin.com/in/loganbjork/" target="_blank">
-                          <Image src="/ico/in.png" width={100} height={100} alt="linkedin" />
-                        </a>
-                      </Button>
-                      <Button asChild size="icon" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
-                        <a href="/Logan_Bjork_Resume.pdf" target="_blank">
-                          <Image src="/ico/download.png" width={100} height={100} alt="resume download" />
-                        </a>
-                      </Button>
-                    </div>
+                    <Button size="icon-lg" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
+                      <a href="/projects">
+                        <Image src="/ico/proj.png" width={100} height={100} alt="projects" />
+                      </a>
+                    </Button>
+
+                    <Button size="icon-lg" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
+                      <a href="/gallery">
+                        <Image src="/ico/gallery.png" width={100} height={100} alt="projects" />
+                      </a>
+                    </Button>
+
+                    <audio src="untitled.wav" preload="auto" />
+                    <Button size="icon-lg" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg hover:cursor-pointer shadow-blue-950" onClick={play}>
+                      <Image src="/ico/maow.png" width={100} height={100} alt="meow"/>
+                    </Button>
                   </div>
-                </div>
+
+                  <div className="flex flex-col gap-6">
+                    <Button asChild size="icon-lg" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
+                      <a href="https://github.com/loganjaymes" target="_blank">
+                        <Image src="/ico/gitcol.png" width={100} height={100} alt="git" />
+                      </a>
+                    </Button>
+                    <Button asChild size="icon-lg" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
+                      <a href="https://www.linkedin.com/in/loganbjork/" target="_blank">
+                        <Image src="/ico/in.png" width={100} height={100} alt="linkedin" />
+                      </a>
+                    </Button>
+                    <Button asChild size="icon-lg" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
+                      <a href="/Logan_Bjork_Resume.pdf" target="_blank">
+                        <Image src="/ico/download.png" width={100} height={100} alt="resume download" />
+                      </a>
+                    </Button>
+                  </div>
+              </div>
               </CardContent>
             </Card>
-                        
-          {/* right cols */}
-          <div className="flex flex-col gap-4">
-            {/* stack card */}
-            <div className="[perspective:600px]">
-              <Card className="bg-slate-gray-950 text-zinc-300 h-fit">
-                <CardHeader>
-                  <CardTitle>languages & frameworks</CardTitle>
-                </CardHeader>
-                <CardContent className="flex w-fit gap-10 px-14">
-                  <ul className="list-disc">
-                    {/* maybe have each bullet be img representing tech. use globals.css for this https://stackoverflow.com/questions/21161569/html-list-with-different-images-as-bullets */}
-                    <li>HTML/CSS</li>
-                    <li>Python</li>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>TypeScript</li>
-                  </ul>
-                  <ul className="list-disc">
-                    <li>React</li>
-                    <li>Next.JS</li>
-                    <li>Svelte</li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* contact */}
-            <div className="[perspective:800px] flex-1 min-h-0">
-              <Card className="bg-slate-gray-950 text-zinc-300 overflow-y-auto">
-                <CardHeader>
-                  <CardTitle>contact me</CardTitle>
-                </CardHeader>
-                <CardContent className="flex flex-col w-full">
-                  <ContactForm />
-                </CardContent>
-              </Card>
-            </div>
-
           </div>
+
+        {/* abt */}
+          <Card className="bg-slate-gray-950 text-zinc-300 max-w-7/12 justify-center h-1/2">
+            <CardHeader>
+              <CardTitle>about me</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-row gap-4 text-lg">
+                <Image src="/meirl.webp" alt="me smile" className="rounded-sm object-cover w-[450px] h-[450px] max-w-[450px] max-h-[450px]" width={500} height={500}/>
+                <div className="flex flex-col gap-6">
+                  <h2>Hi, I'm Logan Bjork- a developer, illustrator, and designer.</h2>
+                  <p>I'm currently an undergraduate at the University of Florida interested in software engineering, cybersecurity, and web development.</p>
+                  <p>Outside of programming, I enjoy playing guitar and bass, illustrating and 3D modeling, as well as weightlifting and calisthenics.</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+                        
+        {/* contact */}
+        <div className="[perspective:800px] flex-1 min-h-0">
+          <Card className="bg-slate-gray-950 text-zinc-300 overflow-y-auto">
+            <CardHeader>
+              <CardTitle>contact me</CardTitle>
+            </CardHeader>
+            <CardContent className="flex flex-col w-full">
+              <ContactForm />
+            </CardContent>
+          </Card>
         </div>
-      </main>
+      </div>
+    </main>
   );
 }

@@ -7,30 +7,11 @@ export default function now() {
       <div className="flex flex-col text-center h-full text-zinc-300 gap-2">
         <div className="pb-8 gap-2">
           <h1 className="text-5xl">now</h1>
-          <p>Last updated October 10th, 2025.</p>
+          <p>Last updated November 27th, 2025.</p>
           <a href="https://nownownow.com/about" className="opacity-25 hover:underline">What am I?</a>
         </div>
 
         <div className="flex flex-col gap-8 px-16 text-lg">
-          {/* idk if i like px */}
-          <div>
-            <h2 className="text-3xl">goals...</h2>
-            <div className="flex flex-row text-left items-end p-4 gap-4 gap-x-10">
-              <Image src="/goals.png" alt="list of goals for the fall" width={350} height={400} />
-              <div className="flex flex-col gap-4">
-                <p>
-                  If you remember my list of goals from the summer, I created another for this fall. A lot of them are repeated because I believe they're things I should continue to shoot for,
-                  like projects, leetcode, and hobbies (fe. lifting, boxing, and music).
-                </p>
-                <p>
-                  The ones I want to complete the most this time around are securing an internship/co-op to further my development skills, and my hobby-oriented goals (such as benching 185lbs,
-                  completing a muscle up, and releasing a song).
-                </p>
-                <p>I don't have a deadline yet, but I'm thinking sometime in mid-December.</p>
-              </div>
-            </div>
-          </div>
-
           <div>
             <h2 className="text-3xl">projects...</h2>
             <div className="flex flex-col text-left p-4 gap-4">
@@ -69,18 +50,14 @@ export default function now() {
             </div>
           </div>
 
-          {/* <div>
-            <h2 className="text-3xl">gym...</h2>
-            <div className="flex flex-col text-left p-4 gap-4">
-              <p>
-                I recently changed my split from PPL (push-pull-legs) to PPC (push-pull-calisthenics) because I missed doing calisthenics. 
-                Basically, I merged my (already minimal) legs split to my push and pull days.
-              </p>
-              <p>
-                Hoping to work up to a muscle up (obviously), but some other large goals include a handstand, planche, and one-arm pull up. I think the latter will take the longest, though.
-              </p>
+          <div className="flex flex-col gap-8 px-16 text-lg">
+            <div>
+              <h2 className="text-3xl">misc...</h2>
+              <div className="flex flex-col text-left p-4 gap-4">
+                <p>The semester's almost done and all I can say is thank God. I want to get back to building things.</p>
+              </div>
             </div>
-          </div> */}
+          </div>
 
         </div>
       </div>
