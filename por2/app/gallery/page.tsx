@@ -40,17 +40,17 @@ export default function gallery() {
             <div className="flex flex-col gap-8 items-center">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/C_TJbIHzkGs?si=pxdeDuDcGvxLMNc1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" />
                 <div className="flex flex-row gap-8">
-                  <Button asChild size="icon-lg" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
+                  <div className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
                     <a href="https://www.youtube.com/@loganjaymes" target="_blank">
                       <Image src="/ico/yt.png" width={100} height={100} alt="youtube" />
                     </a>
-                  </Button>
+                  </div>
 
-                  <Button asChild size="icon-lg" className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
+                  <div className="transition-shadow ease-in-out duration-100 hover:opacity-50 hover:shadow-lg shadow-blue-950">
                     <a href="https://courier7.bandcamp.com/" target="_blank">
                       <Image src="/ico/bc.png" width={100} height={100} alt="youtube" />
                     </a>
-                  </Button>
+                  </div>
                 </div>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/2MI-_jWAmlE?si=91cSU7Q48C8OyWYh" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" />
               </div>
